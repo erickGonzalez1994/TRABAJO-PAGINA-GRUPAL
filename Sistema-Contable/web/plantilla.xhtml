@@ -9,15 +9,31 @@
         <h:outputStylesheet name="./css/default.css"/>
         <h:outputStylesheet name="./css/cssLayout.css"/>
         <h:outputStylesheet name="./css/Login.css"/>
-        
-        <title>Facelets Template</title>
+        <h:outputStylesheet name="./css/Menu.css"/>
+        <meta charset='utf-8'></meta>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+        <link rel="stylesheet" href="Menu.css"></link>
+        <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+        <script src="script.js"></script>
+
     </h:head>
 
     <h:body>
 
         <div id="top">
-            <ui:insert name="top">Top</ui:insert>
+            <ui:insert name="top"></ui:insert>
+            <div id='cssmenu'>
+                <ul>
+                    <li class='active'><a href='#'><span>Home</span></a></li>
+                    <li><a href='#'><span>Products</span></a></li>
+                    <li><a href='#'><span>Company</span></a></li>
+                    <li class='last'><a href='#'><span>Contact</span></a></li>
+                </ul>
+            </div>
+
         </div>
+
 
         <div id="content" class="center_content">
             <ui:insert name="content">Content</ui:insert>

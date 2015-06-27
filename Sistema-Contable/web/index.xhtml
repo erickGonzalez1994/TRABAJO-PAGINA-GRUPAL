@@ -8,42 +8,10 @@
     <h:head>
         <title>ACAT</title>
         <h:outputStylesheet name=".css/Login.css"/>
+        <h:outputStylesheet name=".css/Menu.css"/>
     </h:head>
     <h:body>
         <ui:composition template="plantilla.xhtml">
-            <ui:define name="top">
-                <h:form>  
-                    <p:growl id="messages"/>
-
-                    <p:menubar>
-                        <p:submenu label="File" icon="ui-icon-document">
-                            <p:submenu label="New" icon="ui-icon-contact">
-                                <p:menuitem value="Project" url="#" />
-                                <p:menuitem value="Other" url="#" />
-                            </p:submenu>
-                            <p:menuitem value="Open" url="#" />
-                            <p:separator />
-                            <p:menuitem value="Quit" url="#" />
-                        </p:submenu>
-
-
-
-                        <p:submenu label="Help" icon="ui-icon-help">
-                            <p:menuitem value="Contactos" url="#" />
-                            <p:submenu label="¿Quienes somos?" icon="ui-icon-search">
-
-                            </p:submenu>
-                        </p:submenu>
-                        <p:menuitem value="Registro Usuarios" url="RegistrarUsuariosSesion.xhtml" icon="ui-icon-help" />
-
-
-                        <p:menuitem value="Quit" url="#" icon="ui-icon-close" />
-
-
-                    </p:menubar>
-                </h:form>
-            </ui:define>
-
             <ui:define name="content">
                 <div class="login">
                     <div class="heading">
